@@ -1,0 +1,265 @@
+.profile-card {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 30px;  /* Increased padding for a larger feel */
+  max-width: 600px;  /* Increased max-width */
+  width: 100%;  /* Flexibility for smaller screens */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  color: white;
+  text-align: center;
+  margin: 30px auto;  /* Center the card */
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.profile-card:hover {
+  transform: translateY(-10px);
+}
+
+.profile-avatar {
+  width: 180px;  /* Larger avatar size */
+  height: 180px;
+  border-radius: 10%;
+  object-fit: cover;
+  margin-bottom: 25px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.profile-name {
+  font-size: 2rem;  /* Larger font for the name */
+  margin: 0;
+}
+
+.profile-title {
+  font-size: 1.5rem;  /* Larger title */
+  color: #ccc;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.profile-description {
+  font-size: 1.2rem;  /* Larger description */
+  color: #ddd;
+}
+
+/* Buttons */
+.profile-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 25px 0;
+}
+
+.profile-buttons button {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 12px 24px;  /* Bigger buttons */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-buttons button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.profile-section-content {
+  margin-top: 25px;
+  text-align: left;
+  color: white;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .profile-card {
+    max-width: 95%;  /* Almost full width on mobile */
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .profile-avatar {
+    width: 140px;
+    height: 140px;
+  }
+
+  .profile-name {
+    font-size: 1.7rem;
+  }
+
+  .profile-title {
+    font-size: 1.3rem;
+  }
+
+  .profile-description {
+    font-size: 1.1rem;
+  }
+
+  .profile-buttons button {
+    padding: 10px 20px;
+  }
+}
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+.social-icon {
+  font-size: 2rem;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+.social-icon:hover {
+  color: #1da1f2;
+}
+.resume-preview {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.resume-preview a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.resume-preview a:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Projects Section */
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.project-card h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.project-card p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.project-card a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+}
+
+.project-card a:hover {
+  color: #ccc;
+}
+
+.project-card a svg {
+  margin-left: 8px;
+}
+
+/* Experience Section */
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.experience-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.experience-card h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.experience-card p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.experience-card strong {
+  color: #ccc;
+}
+/* Education Section */
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.education-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.education-card h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.education-card p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.education-card strong {
+  color: #ccc;
+}
+/* Contact Section */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-item a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.contact-icon {
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+
+.contact-item a:hover {
+  color: #ffd700;  /* Highlight on hover */
+  text-decoration: underline;
+}
